@@ -8,7 +8,27 @@
     background-image: linear-gradient(to right, aqua , white);
 }
 
-.itemsHolder{
+.itemsHolder {
     text-align: left;
     padding-left: 2%;
+}
+
+.introHolder {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.leftColumnHolder {
+    flex: 1;
+}
+
+.rightColumnHolder {
+    padding-right: 2%;
+}
+
+.introText {
+    margin: 0;
+    padding: 0;
 }

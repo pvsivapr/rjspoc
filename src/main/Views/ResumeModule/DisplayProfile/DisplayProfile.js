@@ -3,6 +3,17 @@ import CustomPage from './../../../CustomControls/Header_Body/CustomPage';
 // var data = require('json!./data.json');
 import * as jsonData from './../../../Data/Resume.json';
 import SectionCell from './Cells/SectionCell';
+import IntroCell from './Cells/IntroCell';
+
+
+
+const loadIntroData = (data) => {
+    if(data !== null && data !== undefined){
+        return (
+            <IntroCell data={data} />
+        );
+    }
+}
 
 const loadEducationData = (data) => {
     if(data !== null && data !== undefined){
@@ -46,12 +57,17 @@ const load_EducationData = (data) => {
 
 const loadData = data => {
     if(data != null && data != undefined){
-        var educationData = data.education_info;
-        var jobData = data.job_history;
-        var technicalSkillsData = data.technical_skills;
+        const profileData = data.personal_info;
+        const educationData = data.education_info;
+        const jobData = data.job_history;
+        const technicalSkillsData = data.technical_skills;
 
         return(
             <div>
+                {
+                    //intro data
+                    loadIntroData(profileData)
+                }
                 {
                     //education data
                     loadEducationData(educationData)

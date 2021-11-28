@@ -1,9 +1,10 @@
 {
-    "name": "Apple",
-    "title": "Large",
-    "email_id": "Red",
-    "mobile_number": "Red",
-    "summary": "",
+    "personal_info": {
+    "name": "Venkata Siva Prasad Reddy Pulagam",
+    "title": "Mobile App Developer(Android/iOS)",
+    "email_id": "pvsivapr@gmail.com",
+    "mobile_number": "9494953236",
+    "summary": ""},
     "education_info": {
         "heading": "Education Information",
         "data": [
@@ -56,5 +57,19 @@
     ]},
     "technical_skills": {
         "heading": "Technical Skills",
-        "data": []}
+        "data": []
+    },
+    "project_details": {
+        "heading": "Projects",
+        "shall_show_module": true,
+        "data": [
+            {
+                "project_name": "",
+                "client_country": "",
+                "start_date": "",
+                "end_date": "",
+                "project_description": ""
+            }
+        ]
+    }
 }
