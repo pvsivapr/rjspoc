@@ -1,0 +1,14 @@
+.titleHolder {
+    background-color: aqua;
+    text-align: left;
+    padding-left: 2%;
+}
+
+.gradientColor {
+    background-image: linear-gradient(to right, aqua , white);
+}
+
+.itemsHolder{
+    text-align: left;
+    padding-left: 2%;
+}

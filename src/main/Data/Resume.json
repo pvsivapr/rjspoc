@@ -1,5 +1,60 @@
 {
-    "fruit": "Apple",
-    "size": "Large",
-    "color": "Red"
+    "name": "Apple",
+    "title": "Large",
+    "email_id": "Red",
+    "mobile_number": "Red",
+    "summary": "",
+    "education_info": {
+        "heading": "Education Information",
+        "data": [
+        {
+            "course": "B.Tech Civil Engineering",
+            "institute_name": "Aditya Engineering College",
+            "affliated_to_university": "JNTU Kakinada",
+            "is_institute_university_same": false,
+            "start_date": "2009",
+            "end_date": "2013"
+        },        
+        {
+            "course": "MPC",
+            "institute_name": "Aditya Junior College",
+            "affliated_to_university": "Board of Intermediate",
+            "is_institute_university_same": false,
+            "start_date": "2007",
+            "end_date": "2009"
+        },        
+        {
+            "course": "10th",
+            "institute_name": "Saiteja Vidya Niketan",
+            "affliated_to_university": "State Secondary Education",
+            "is_institute_university_same": false,
+            "start_date": "2006",
+            "end_date": "2007"
+        }
+    ]},
+    "job_history": {
+        "heading": "Job History",
+        "data": [
+        {
+            "position": "Associate",
+            "company_name": "Cognizant Technological Solutions",
+            "start_date": "July 2021",
+            "end_date": "till date" 
+        },
+        {
+            "position": "Programmer Analyst",
+            "company_name": "Cognizant Technological Solutions",
+            "start_date": "October 2018",
+            "end_date": "June 2021" 
+        },
+        {
+            "position": "Junior Developer",
+            "company_name": "Dev Rabbit IT Solutions PVT. LTD.",
+            "start_date": "June 2016",
+            "end_date": "September 2018" 
+        }
+    ]},
+    "technical_skills": {
+        "heading": "Technical Skills",
+        "data": []}
 }
