@@ -1,13 +1,14 @@
 import React, {Fragment} from 'react';
-import Header from './../../CustomControls/Header_Body/Header';
+import CustomPage from './../../CustomControls/Header_Body/CustomPage';
 import './IntroPage.css';
 
 function Intro_Page() {
   return (
+    <CustomPage >
     <div>
-      <Header />
       <h1>Hello World</h1>
     </div>
+    </CustomPage>
   );
 }
 

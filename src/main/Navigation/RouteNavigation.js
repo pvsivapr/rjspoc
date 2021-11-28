@@ -6,6 +6,8 @@ import {
   Route
 } from "react-router-dom";
 import Header from "../CustomControls/Header_Body/Header";
+import AboutPage from "../Views/About/AboutPage";
+import DisplayProfilePage from "../Views/ResumeModule/DisplayProfile/DisplayProfile";
 import IntroPage from "./../Views/IntroPage/IntroPage";
 
 const Route_Navigation = (props) => {
@@ -47,10 +49,13 @@ const Route_Navigation = (props) => {
   const RouteNavigation = (props) => {
     return (
       <div className="mainHolder">
-        {/* <Header /> */}
+        
       <Router>
+      {/* <Header /> */}
         <Routes>
         <Route path="/" element={<IntroPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/profile" element={<DisplayProfilePage />} />
       </Routes>
       </Router>
       </div>

@@ -1,25 +1,37 @@
 import React from 'react';
 import CustomButton from '../../CustomControls/CustomButton/CustomButton';
 import EntryBox from '../../CustomControls/EntryBox/EntryBox';
+import CustomPage from '../../CustomControls/Header_Body/CustomPage';
 import Header from '../../CustomControls/Header_Body/Header';
+import PageBody from '../../CustomControls/Header_Body/PageBody';
 import "./../ViewBody.css";
 
 const AboutPage = (props) => {
       return (
-         <div className="mainHolder">
-            <Header />
+         <CustomPage >
             <div>
                 <h1>This is about page</h1>
             </div>
             <div>
-            {/* <form method="post" action="" name="singleURLForm" onsubmit="AccessSingleURLData(); return false;"> */}
-               <form method="post" action="" name="singleURLForm" onsubmit="return false;">
-               <EntryBox id="hehe" labelText="Name" hintText="Enter Name" isRequired={true} />
-               <CustomButton Title="Submit"/>
-               </form>
-               {/* {AddTextField("sdsdsd","asdada","asdada")} */}
+               <p>
+                  This is about page only
+               </p>
             </div>
-         </div>
+         {/* <div className="mainHolder">
+            <Header />
+            
+         <PageBody>
+            <div>
+                <h1>This is about page</h1>
+            </div>
+            <div>
+               <p>
+                  This is about page only
+               </p>
+            </div>
+         </PageBody>
+         </div> */}
+         </CustomPage>
       )
 }
 export default AboutPage;

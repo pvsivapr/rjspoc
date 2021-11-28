@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate as useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import CustomButton from '../CustomButton/CustomButton';
 import "./HeaderBody.css"
 
@@ -9,7 +9,7 @@ const Header = (props) => {
     navigationPath,
   } = props;
   //    render() {
-  const history = useHistory();
+  const navigation = useNavigate(); // props.navigation; // useNavigate();
   /*
   const uiStyles = {
    headerBackgroundStyle2:{
@@ -60,10 +60,10 @@ outline: "none",
   */
  const onBackButtonClicked = () => {
    if(navigationPath !== null && navigationPath !== undefined && navigationPath !== "" && navigationPath !== " "){
-     history.push(navigationPath);
+    navigation.navigate(navigationPath);
    }
    else{
-     history.goBack();
+    navigation.goBack();
    }
  }
 
@@ -88,15 +88,17 @@ outline: "none",
               <CustomButton className="LeftButtonStyle" title="<" onClick={onBackButtonClicked} />
               :
               <>
-                <button className="LeftButtonStyle" onClick={() => { history.push("/home"); }}>Home</button>
-                <button className="LeftButtonStyle" onClick={() => { history.push("/about"); }}>About</button>
-                <button className="LeftButtonStyle" onClick={() => { history.push("/contact"); }}>Contact</button>
-                <button className="LeftButtonStyle" onClick={() => { history.push("/getImages"); }}>Images</button>
+              <button className="LeftButtonStyle" onClick={() => { navigation("/"); }}>Intro</button>
+                {/* <button className="LeftButtonStyle" onClick={() => { history.push("/home"); }}>Home</button> */}
+                <button className="LeftButtonStyle" onClick={() => { navigation("/about"); }}>About</button>
+                {/* <button className="LeftButtonStyle" onClick={() => { history.push("/contact"); }}>Contact</button>
+                <button className="LeftButtonStyle" onClick={() => { history.push("/getImages"); }}>Images</button> */}
+                <button className="LeftButtonStyle" onClick={() => { navigation("/profile"); }}>Profile</button>
               </>
           }
         </div>
         <div className="RightButtonsHolderStyle">
-          <button className="RightButtonStyle" onClick={() => { history.push("/login"); }}>Login</button>
+          {/* <button className="RightButtonStyle" onClick={() => { navigation("/login"); }}>Login</button> */}
         </div>
       </div>
       <div></div>
