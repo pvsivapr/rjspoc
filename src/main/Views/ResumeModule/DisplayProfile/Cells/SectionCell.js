@@ -4,6 +4,7 @@ import './Cell.css';
 const SectionCell = (props) => {
     const {
         Title,
+        Description,
         Items
      } = props;
 
@@ -14,9 +15,16 @@ const SectionCell = (props) => {
                 </div>
                 <div className="itemsHolder">
                     {
+                        (Description !== null && Description !== undefined) ?
+                    (<p>{Description}</p>) : 
+                    (<></>)
+                    }
+                    {
+                        (Items !== null && Items !== undefined) ?
                         Items.map(item => {
                             return(<li>{item}</li>);
-                        })
+                        }) :
+                        <></>
                     }
                 </div>
             </div>

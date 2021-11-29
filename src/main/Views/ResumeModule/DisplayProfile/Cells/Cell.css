@@ -1,3 +1,11 @@
+/*
+To set word warp
+*/
+p {
+    word-break: break-all;
+    white-space: normal;
+}
+
 .titleHolder {
     background-color: aqua;
     text-align: left;
@@ -31,4 +39,9 @@
 .introText {
     margin: 0;
     padding: 0;
+}
+
+.profileImageStyle {
+    height: 30;
+    width: 30;
 }

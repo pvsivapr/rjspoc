@@ -4,7 +4,16 @@
     "title": "Mobile App Developer(Android/iOS)",
     "email_id": "pvsivapr@gmail.com",
     "mobile_number": "9494953236",
-    "summary": ""},
+    "profile_image": "",
+    "show_profile_image": true,
+    "current_location": "Hyderabad",
+    "curent_company": "",
+    "summary": "React Native, Xamarin Forms"
+},
+"experience_summary":{
+    "heading": "Experience Summary",
+    "data": "Around 5+ years of experience in design and development of UI, API Integrations for mobile applications (Android and iOS) using React Native and Xamarin Forms. Have work experience with Redux, Redux-Saga, MVVM design patterns, Google Maps sdk, Push Notifications, Camera etc., in mobile application development. Have basic knowledge in React JS web apps."
+},
     "education_info": {
         "heading": "Education Information",
         "data": [
@@ -57,7 +66,48 @@
     ]},
     "technical_skills": {
         "heading": "Technical Skills",
-        "data": []
+        "data": [
+            {
+                "title": "Xamarin Forms",
+                "type": "UI Frameworks/Libraries",
+                "works_on": "Android/iOS"
+            },
+            {
+                "title": "MVVM",
+                "type": "Design Patterns",
+                "works_on": ""
+            },
+            {
+                "title": "Redux",
+                "type": "Design Patterns",
+                "works_on": ""
+            },
+            {
+                "title": "C#",
+                "type": "Programming Languages",
+                "works_on": ""
+            },
+            {
+                "title": "JavaScript",
+                "type": "Programming Languages",
+                "works_on": ""
+            },
+            {
+                "title": "HTML",
+                "type": "Scripting Languages",
+                "works_on": ""
+            },
+            {
+                "title": "XAML",
+                "type": "Scripting Languages",
+                "works_on": "Android/iOS"
+            },
+            {
+                "title": "XML",
+                "type": "Scripting Languages",
+                "works_on": "Android/iOS"
+            }
+        ]
     },
     "project_details": {
         "heading": "Projects",

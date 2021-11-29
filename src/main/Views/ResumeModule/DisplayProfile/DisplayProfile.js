@@ -15,6 +15,16 @@ const loadIntroData = (data) => {
     }
 }
 
+const loadExperienceSummary = (data) => {
+    if(data !== null && data !== undefined){
+        return(
+            <div>
+                <SectionCell Title={data.heading} Description={data.data}/>
+            </div>
+        );
+    }
+}
+
 const loadEducationData = (data) => {
     if(data !== null && data !== undefined){
         const eduItems = data.data;
@@ -57,6 +67,7 @@ const load_EducationData = (data) => {
 
 const loadData = data => {
     if(data != null && data != undefined){
+        const experienceSummary = data.experience_summary;
         const profileData = data.personal_info;
         const educationData = data.education_info;
         const jobData = data.job_history;
@@ -69,12 +80,16 @@ const loadData = data => {
                     loadIntroData(profileData)
                 }
                 {
-                    //education data
-                    loadEducationData(educationData)
+                    //Experience Summary
+                    loadExperienceSummary(experienceSummary)
                 }
                 {
                     //job data
                     loadJobData(jobData)
+                }
+                {
+                    //education data
+                    loadEducationData(educationData)
                 }
                 {
                     //technical skills data
